@@ -9,7 +9,7 @@ export const useHead = (/* route: Route */) => {
   console.log('raw meta', title, description, heading)
   window.$nuxt.$emit('setHeading', heading)
 
-  return useMeta({
+  useMeta({
     title,
     meta: [
       { hid: 'description', name: 'description', content: description },

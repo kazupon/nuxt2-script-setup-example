@@ -4,8 +4,8 @@ import { useHead } from '~/composables/useHead'
 
 export default defineComponent({
   setup() {
-    const head = useHead()
-    return { ...head }
+    useHead()
+    return {}
   },
   head: {},
 })
