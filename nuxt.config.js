@@ -1,3 +1,5 @@
+const path = require('path')
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -43,6 +45,10 @@ export default {
 
   scriptSetup: {
     refTransform: true
+  },
+
+  alias: {
+    'composables': path.resolve(__dirname, './composables')
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
